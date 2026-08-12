@@ -1,0 +1,178 @@
+.ra-page {
+  min-height: 100vh;
+  background: #f4f5fb;
+  padding: 32px 40px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1f2937;
+}
+
+.ra-title {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.ra-tabs {
+  display: inline-flex;
+  background: white;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.ra-tabs button {
+  border: none;
+  background: transparent;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.ra-tabs button.active {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.ra-tabs button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ra-upload-card {
+  background: white;
+  border: 2px dashed #c4b5fd;
+  border-radius: 16px;
+  padding: 48px 24px;
+  text-align: center;
+  max-width: 420px;
+}
+
+.ra-upload-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.ra-upload-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.ra-upload-sub {
+  color: #9ca3af;
+  font-size: 12px;
+  margin: 0 0 20px;
+}
+
+.ra-choose-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ra-filename {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ra-analysis-grid,
+.ra-skills-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ra-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.ra-panel-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.ra-gauge-wrap {
+  position: relative;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.ra-gauge {
+  width: 100%;
+}
+
+.ra-gauge-label {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ra-gauge-score {
+  font-size: 30px;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.ra-gauge-max {
+  font-size: 13px;
+  color: #9ca3af;
+  display: block;
+}
+
+.ra-gauge-status {
+  text-align: center;
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.ra-suggestion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ra-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ra-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ra-tag.detected {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.ra-tag.missing {
+  background: #fee2e2;
+  color: #dc2626;
+}

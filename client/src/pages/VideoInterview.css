@@ -1,0 +1,328 @@
+.vi-page {
+  min-height: 100vh;
+  background: #0d1117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.vi-card {
+  background: #171b2e;
+  border: 1px solid #262b45;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 920px;
+  width: 100%;
+  color: white;
+}
+
+.vi-card:fullscreen {
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #171b2e;
+}
+
+.vi-card:fullscreen .vi-body {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.vi-card:fullscreen .vi-video-wrap {
+  aspect-ratio: 16 / 9;
+}
+
+.vi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.vi-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
+.vi-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.vi-recording {
+  color: #f87171;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.vi-timer {
+  font-size: 13px;
+  color: #9aa4c1;
+  background: #1f2440;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.vi-body {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 16px;
+}
+
+.vi-video-wrap {
+  position: relative;
+  background: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.vi-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vi-camera-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #f87171;
+  font-size: 13px;
+  padding: 24px;
+  text-align: center;
+}
+
+.vi-face-box {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  width: 40%;
+  height: 55%;
+  border: 2px solid #5eead4;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.vi-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  background: #1f2440;
+  border-radius: 14px;
+  padding: 8px 12px;
+}
+
+.vi-waveform {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 24px;
+}
+
+.vi-waveform span {
+  flex: 1;
+  background: #6d8cff;
+  border-radius: 2px;
+  min-height: 4px;
+  transition: height 0.2s ease;
+}
+
+.vi-record-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.15);
+}
+
+.vi-record-btn.stop {
+  background: #dc2626;
+}
+
+.vi-record-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.vi-self-thumb {
+  width: 64px;
+  height: 48px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #2a3060;
+}
+
+.vi-self-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vi-analysis-col {
+  background: #1c2140;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.vi-analysis-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.vi-metric {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.vi-metric-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.vi-metric-info {
+  flex: 1;
+}
+
+.vi-metric-label {
+  font-size: 12px;
+  color: #9aa4c1;
+  margin: 0 0 5px;
+}
+
+.vi-bar {
+  background: #2a3060;
+  border-radius: 20px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.vi-bar-fill {
+  background: #22c55e;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.vi-bar-fill.purple {
+  background: #a78bfa;
+}
+
+.vi-metric-value {
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 32px;
+  text-align: right;
+}
+
+.vi-metric-simple {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.vi-metric-simple .vi-metric-label {
+  flex: 1;
+  margin: 0;
+}
+
+.vi-metric-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 12px;
+}
+
+.vi-metric-tag.green {
+  background: #123123;
+  color: #4ade80;
+}
+
+.vi-question-box {
+  background: #12162b;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 18px;
+}
+
+.vi-question-title {
+  font-size: 11px;
+  color: #9aa4c1;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.vi-question-text {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+  color: #e6e9f5;
+}
+
+.vi-result-card {
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.vi-score {
+  font-size: 46px;
+  font-weight: 800;
+  color: #4ade80;
+  margin: 12px 0 4px;
+}
+
+.vi-score-label {
+  color: #9aa4c1;
+  font-size: 13px;
+  margin: 0 0 28px;
+}
+
+.vi-result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.vi-result-actions button {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.vi-result-actions button.secondary {
+  background: transparent;
+  border: 1.5px solid #3d4568;
+  color: #e6e9f5;
+}

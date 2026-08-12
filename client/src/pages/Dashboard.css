@@ -1,0 +1,252 @@
+.d2-shell {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f5fb;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1f2937;
+}
+
+.d2-sidebar {
+  width: 230px;
+  background: #1e1b3a;
+  color: #cbd5e1;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.d2-logo {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 24px;
+  padding: 0 8px;
+}
+
+.d2-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.d2-sidebar nav a {
+  padding: 9px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.d2-sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.d2-sidebar nav a.active {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+}
+
+.d2-nav-icon {
+  font-size: 14px;
+}
+
+.d2-logout-link {
+  padding: 9px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #f87171;
+}
+
+.d2-main {
+  flex: 1;
+  padding: 24px 32px;
+}
+
+.d2-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.d2-topbar h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.d2-topbar p {
+  margin: 2px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.d2-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.d2-track-select {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: white;
+}
+
+.d2-bell {
+  font-size: 16px;
+}
+
+.d2-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.d2-stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.d2-stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.d2-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.d2-stat-value.blue { color: #2563eb; }
+.d2-stat-value.green { color: #16a34a; }
+.d2-stat-value.purple { color: #7c3aed; }
+.d2-stat-value.red { color: #dc2626; }
+
+.d2-stat-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.d2-stat-delta {
+  font-size: 11px;
+  margin: 0;
+}
+
+.d2-stat-delta.up {
+  color: #16a34a;
+}
+
+.d2-grid-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.d2-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.d2-panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #374151;
+}
+
+.d2-action {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.d2-action.primary {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.d2-activity-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.d2-activity-row:last-child {
+  border-bottom: none;
+}
+
+.d2-activity-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  background: #f3f4f6;
+}
+
+.d2-activity-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.d2-activity-detail {
+  font-size: 11px;
+  color: #16a34a;
+  margin: 0;
+}
+
+.d2-suggestion {
+  background: linear-gradient(135deg, #ede9fe, #fce7f3);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.d2-suggestion-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  color: #6d28d9;
+}
+
+.d2-suggestion-text {
+  font-size: 12px;
+  color: #4b5563;
+  margin: 2px 0 0;
+}

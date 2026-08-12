@@ -1,0 +1,92 @@
+.cat-page {
+  min-height: 100vh;
+  background: #f4f5fb;
+  padding: 32px 40px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1f2937;
+}
+
+.cat-header {
+  margin-bottom: 24px;
+}
+
+.cat-header h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+
+.cat-header p {
+  color: #6b7280;
+  font-size: 13px;
+  margin: 0;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.cat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cat-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cat-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.cat-top-row h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cat-level {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.cat-level.green { background: #dcfce7; color: #16a34a; }
+.cat-level.amber { background: #fef3c7; color: #d97706; }
+.cat-level.red { background: #fee2e2; color: #dc2626; }
+
+.cat-desc {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.cat-card button {
+  width: 100%;
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cat-card button:hover {
+  opacity: 0.92;
+}

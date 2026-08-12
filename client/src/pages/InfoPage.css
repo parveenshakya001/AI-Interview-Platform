@@ -1,0 +1,38 @@
+.info-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #4c1d95, #0f0620 60%);
+  color: white;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  padding: 60px 48px;
+}
+
+.info-page h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  color: #cbbef0;
+  margin: 0 0 40px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.info-card {
+  background: #1a1030;
+  border: 1px solid #3d2f66;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.info-icon { font-size: 28px; margin-bottom: 10px; }
+.info-card h3 { margin: 0 0 8px; font-size: 16px; }
+.info-card p { margin: 0 0 4px; color: #cbbef0; font-size: 13px; }
+.info-card .price { font-size: 22px; font-weight: 700; margin: 8px 0; }
+.info-card .date { font-size: 11px; color: #8b7bb8; }
+.info-card ul { margin: 12px 0 0; padding-left: 18px; font-size: 13px; color: #cbbef0; }
